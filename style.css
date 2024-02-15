@@ -1,0 +1,278 @@
+:root {
+    --background: #0F172A;
+    --text-highlight: #304ACE;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    color: white;
+    line-height: 1.8;
+}
+
+input,
+button {
+    font-family: var(--font-family);
+    line-height: 1.8;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    color: white;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/***** Navbar *****/
+navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 150px;
+    background-color: var(--background);
+    padding: 0 5em;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%
+}
+
+.home-link {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-container span {
+    margin-left: 0.2em;
+    color: var(--text-highlight)
+}
+
+.nav-container>ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-el {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/***** Main *****/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/***** Home *****/
+#home {
+    background-image: url(images/home.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+/***** About *****/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-cols {
+    display: flex;
+    gap: 1em;
+}
+
+.highlight {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 2em;
+    color: var(--text-highlight);
+}
+
+/***** Process *****/
+#process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phases {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4em;
+}
+
+.phase {
+    flex: 1;
+}
+
+.phase>h4 {
+    font-size: 1.2rem;
+    list-style: none;
+    margin-top: 1em;
+}
+
+/***** Contact *****/
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.form-el {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1em;
+}
+
+form input,
+form input::placeholder,
+form textarea,
+form textarea::placeholder {
+    color: black;
+}
+
+form input,
+form textarea {
+    outline: none;
+}
+
+form textarea {
+    height: 200px;
+}
+
+
+form button {
+    margin-top: 2em;
+    font-size: 1rem;
+    padding: 1em;
+    background-color: var(--text-highlight);
+}
+
+/***** Footer *****/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* All tablet screen */
+@media (max-width: 1025px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    navbar {
+        padding: 0;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-container>ul {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-container>h1 {
+        white-space: nowrap;
+    }
+
+}
+
+/* All mobile screens */
+@media (max-width: 470px) {
+
+    section {
+        padding-top: 160px;
+    }
+
+    #home {
+        background-image: url(images/home-vert-2.jpg);
+        background-position: center center;
+        font-size: 2.5rem;
+    }
+
+    .about-cols {
+        flex-direction: column;
+    }
+
+    #about {
+        align-items: flex-start;
+    }
+
+    #process {
+        justify-content: flex-start;
+    }
+
+    .phases {
+        flex-direction: column;
+    }
+
+    #contact {
+        align-items: flex-start;
+    }
+
+    form {
+        width: 100%;
+    }
+}
