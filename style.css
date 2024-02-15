@@ -30,12 +30,18 @@ body {
     color: white;
 }
 
+section {
+    width: 100%;
+    min-height: 100vh;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
 }
 
-/***** Navbar *****/
+/***************************** Navbar ******************************/
+
 navbar {
     width: 100%;
     display: flex;
@@ -81,7 +87,8 @@ navbar {
     font-weight: 400;
 }
 
-/***** Main *****/
+/***************************** Main ******************************/
+
 main {
     flex: 1;
     display: flex;
@@ -89,12 +96,8 @@ main {
     width: 100%;
 }
 
-section {
-    width: 100%;
-    height: 100vh;
-}
+/***************************** Home ******************************/
 
-/***** Home *****/
 #home {
     background-image: url(images/home.jpg);
     background-size: cover;
@@ -104,7 +107,7 @@ section {
     font-size: 5rem;
 }
 
-/***** About *****/
+/***************************** About ******************************/
 
 #about {
     display: flex;
@@ -133,7 +136,8 @@ section {
     color: var(--text-highlight);
 }
 
-/***** Process *****/
+/***************************** Process ******************************/
+
 #process {
     display: flex;
     align-items: center;
@@ -156,7 +160,12 @@ section {
     margin-top: 1em;
 }
 
-/***** Contact *****/
+.phase ul {
+    list-style: none;
+}
+
+/***************************** Contact ******************************/
+
 #contact {
     display: flex;
     justify-content: center;
@@ -192,7 +201,6 @@ form textarea {
     height: 200px;
 }
 
-
 form button {
     margin-top: 2em;
     font-size: 1rem;
@@ -200,15 +208,16 @@ form button {
     background-color: var(--text-highlight);
 }
 
-/***** Footer *****/
+/***************************** Footer ******************************/
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/***************************** All Tablet Screens ******************************/
 
-/* All tablet screen */
 @media (max-width: 1025px) {
     body {
         font-size: 0.8rem;
@@ -236,10 +245,10 @@ footer {
     .nav-container>h1 {
         white-space: nowrap;
     }
-
 }
 
-/* All mobile screens */
+/***************************** All Mobile Screens ******************************/
+
 @media (max-width: 470px) {
 
     section {
@@ -261,7 +270,7 @@ footer {
     }
 
     #process {
-        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .phases {
