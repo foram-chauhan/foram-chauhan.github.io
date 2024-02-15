@@ -1,5 +1,5 @@
 :root {
-    --background: #0F172A;
+    --background: #F3F1F1;
     --text-highlight: #304ACE;
     --font-family: 'Roboto', sans-serif;
 }
@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
-    color: white;
+    color: #1d1d1f;
     line-height: 1.8;
 }
 
@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--background);
-    color: white;
+    color: #1d1d1f;
 }
 
 section {
@@ -38,6 +38,7 @@ section {
 .container {
     width: 1200px;
     margin: 0 auto;
+    color: whitesmoke; /* Orange color, replace with your preferred color */
 }
 
 /***************************** Navbar ******************************/
@@ -106,6 +107,14 @@ main {
     justify-content: center;
     font-size: 5rem;
 }
+/***************************** About and Contact Separator ******************************/
+
+.about-contact-separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(29, 29, 31, 0.3); /* Adjust the color and transparency as needed */
+    margin: 2em 0;
+}
 
 /***************************** About ******************************/
 
@@ -169,7 +178,14 @@ main {
 #contact {
     display: flex;
     justify-content: center;
+    align-items: left;
+    
+}
+#contact-us-header {
+    display: flex;
+    justify-content: center;
     align-items: center;
+
 }
 
 form {
@@ -204,6 +220,7 @@ form textarea {
 form button {
     margin-top: 2em;
     font-size: 1rem;
+    color: white;
     padding: 1em;
     background-color: var(--text-highlight);
 }
