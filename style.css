@@ -138,7 +138,7 @@ main {
 
 /***************************** Process ******************************/
 
-#process {
+/* #process {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,7 @@ main {
 
 .phase ul {
     list-style: none;
-}
+} */
 
 /***************************** Contact ******************************/
 
@@ -269,13 +269,13 @@ footer {
         align-items: flex-start;
     }
 
-    #process {
+    /* #process {
         align-items: flex-start;
     }
 
     .phases {
         flex-direction: column;
-    }
+    } */
 
     #contact {
         align-items: flex-start;
